@@ -1,0 +1,26 @@
+		<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Express: Post from a form with ejs </title>		
+	</head>	
+
+	<body>	
+		<div>Demonstrating a way to post  a string from a form and have it displayed in the same page.<br />
+			The post response is redirected to a route that renders a view.<br /> 
+			The string is passed in the template via a global variable.
+		</div>
+		<hr />
+
+		<form action="/poststring" method="post">			 	
+			<input type="text"  name="postStringName" placeholder="type a string"/>
+			<input type="submit" id="submit"/>
+		</form>
+
+		<hr />
+		<div>Submitted string: <strong> <%= passedString %> </strong></div>
+		<hr />
+
+		
+
+	</body>
